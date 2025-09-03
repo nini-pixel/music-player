@@ -5,7 +5,7 @@ import className from 'twrnc';
 
 export default function Favourites () {
     return (
-        <View style={className`bg-blue-900 flex-1`}>
+        <View style={className`bg-blue-300 flex-1`}>
             <Text>Favourites</Text>
         </View>
     )

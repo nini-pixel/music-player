@@ -1,4 +1,3 @@
-import SearchInput from '@/components/SearchInput';
 import { Button } from '@react-navigation/elements';
 import { router } from "expo-router";
 import React from 'react';
@@ -7,17 +6,16 @@ import className from 'twrnc';
 
 export default function Index () {
     return (
-        <View style={className`bg-blue-900 flex-1`}>
-            <SearchInput/>
+        <View style={className`bg-blue-200 flex-1`}>
             <Text>Music App</Text>
         <Button onPress={() => router.push('/artists')}>
-        Go to Artists
+        My Podcasts
         </Button>
         <Button onPress={() => router.push('/playlists')}>
-        Go to Playlist
+        My Playlists
         </Button>
         <Button onPress={() => router.push('/favourites')}>
-        Go to Favourites
+        My Favourites
         </Button>
         </View>
     )

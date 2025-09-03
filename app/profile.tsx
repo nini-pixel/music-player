@@ -1,10 +1,12 @@
 import { Button } from '@react-navigation/elements';
 import { router } from "expo-router";
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Platform, Text, View } from 'react-native';
 import className from 'twrnc';
 
-export default function Index () {
+
+export default function Profile () {
     return (
         <View style={className`bg-blue-900 flex-1`}>
             <Text>This is the profile screen</Text>
@@ -14,9 +16,7 @@ export default function Index () {
         <Button onPress={() => router.push('/playlists')}>
         Go to Playlist
         </Button>
-        <Button onPress={() => router.push('/favourites')}>
-        Go to Favourites
-        </Button>
+        <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
         </View>
     )
 }

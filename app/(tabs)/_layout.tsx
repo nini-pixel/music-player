@@ -40,7 +40,12 @@ export default function TabLayout() {
                 name="artists"
                 options={{
                 title: 'Artists',
-                tabBarIcon: ({ color }) => <TabBarIcon name="th" color={color} />,
+                tabBarIcon: ({ color }) => <TabBarIcon name="music" color={color} />,
+                tabBarLabel: 'Artists',
+                headerStyle: {
+                    backgroundColor: 'rgba(55,55,255,0)',
+                    borderWidth: 0,
+                },
                 }}
             />
             <Tabs.Screen
@@ -48,13 +53,15 @@ export default function TabLayout() {
                 options={{
                 title: 'Playlists',
                 tabBarIcon: ({ color }) => <TabBarIcon name="list" color={color} />,
+                tabBarLabel: 'Playlists',
                 }}
             />
             <Tabs.Screen
                 name="favourites"
                 options={{
-                title: 'Favourites',
-                tabBarIcon: ({ color }) => <TabBarIcon name="th-list" color={color} />,
+                headerTitle: 'Favourites',
+                tabBarIcon: ({ color }) => <TabBarIcon name="heart" color={color} />,
+                tabBarLabel: 'Favourites',
                 }}
             />
         </Tabs>

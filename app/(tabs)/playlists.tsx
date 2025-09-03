@@ -1,12 +1,13 @@
+import SearchInput from '@/components/SearchInput';
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import className from 'twrnc';
 
 
 export default function Playlist () {
     return (
-        <View style={className`bg-blue-900 flex-1`}>
-            <Text>Playlists</Text>
+        <View style={className`bg-blue-100 flex-1`}>
+            <SearchInput/>
         </View>
     )
 }

@@ -5,13 +5,14 @@ import className from 'twrnc';
 
 const SearchInput = () => {
     return (
-        <View style={className `bg-blue-900 p-1`}>
+        <View style={className `bg-blue-200 p-2 text-gray-100 
+                rounded-lg flex-row justify-start items-center px-3 gap-3`}>
             <FontAwesome 
-              name='search'
-              color={'white'}
-              style={ className `bg-blue-800 p-2` }/>
-            <TextInput placeholde='Find in songs' style=
-                {className`text-lg flex-1 p-3`}/>
+              name='search' 
+              style={ className `bg-blue-200 p-1 text-gray-400` }/>
+            <TextInput 
+                placeholder='Find in songs' 
+                style={className`text-5x1 flex-1 p-1 text-gray-100`}/>
         </View>
     )
 }
