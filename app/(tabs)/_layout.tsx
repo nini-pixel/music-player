@@ -14,7 +14,29 @@ function TabBarIcon(props: {
 
 export default function TabLayout() {
     return (
-        <Tabs>
+        <Tabs 
+         screenOptions= {{
+            tabBarStyle: {
+                position:'absolute',
+                bottom: 10,
+                left: 20,
+                right: 20,
+                
+                height: 60,
+                backgroundColor: 'white',
+                
+                borderRadius: 20,
+                borderWidth: 1,
+                borderBottomWidth: 2,
+                borderRightWidth: 1.6,
+             },
+            tabBarItemStyle: {
+                marginHorizontal: 6,
+                borderRadius: 10,
+            },
+            headerShadowVisible: false,
+          }}
+        >
             <Tabs.Screen
                 name="index"
                 options={{
@@ -34,7 +56,12 @@ export default function TabLayout() {
                     </Pressable>
                     </Link>
                 ),
+                headerStyle: {
+                    backgroundColor: '#bfdbfe'
+                },
+                headerShadowVisible: false,
                 }}
+                
             />
             <Tabs.Screen
                 name="artists"
