@@ -1,0 +1,10 @@
+[
+    {
+        "url": "./assets/audio/Audio_Guest2_OlgaKolokolova_Paper1.mp3",
+        "title": "Is the Index Efficient a Worldwide Tour with Stochastic Dominance",
+        "artist": "Olga Kolokolova",
+        "artwork": "./assets/image/logo.png",
+        "rating": 1,
+        "playlist":["Series 1"]
+    },
+]
