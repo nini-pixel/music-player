@@ -7,7 +7,7 @@ const SearchInput = () => {
     return (
         <View style={className `bg-blue-200 p-2 text-gray-100 
                 rounded-lg flex-row justify-start items-center 
-                px-3 gap-3 absolute top-10 left-4 right-4`}>
+                px-3 gap-3 absolute top-7 left-4 right-4`}>
             <FontAwesome 
               name='search' 
               style={ className `bg-blue-200 p-1 text-gray-400` }/>
