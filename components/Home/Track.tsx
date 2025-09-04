@@ -3,12 +3,11 @@ import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import className from 'twrnc';
 
-
-export default function Track () {
+const Track = () => {
     return (
-        <View style={className `flex-row gap-3 justify-between items-center ml-3 top-20`}>
-            <Image source={Logo} style={className `h-12 w-12 rounded-lg border border-gray-300`}/>
-            <View style={className `flex-1`}>
+        <View style={className `left-10 flex-row gap-21 bottom-20`}>
+            <Image source={Logo} style={className `w-50 h-30 rounded-lg`}/>
+            <View style={className `flex-col`}>
                 <Text style={styles.title}>Title</Text>
                 <Text style={styles.subtitle}>Subtitle</Text>
                 <Text style={styles.guestName}>Guest</Text>
@@ -17,6 +16,8 @@ export default function Track () {
     )
 }
 
+export default Track 
+
 const styles = StyleSheet.create ({
     title: {
         fontSize: 20,
@@ -24,10 +25,11 @@ const styles = StyleSheet.create ({
     },
     subtitle: {
         fontSize: 18,
-        color: 'white'
     },
     guestName: {
         fontSize: 16,
         color: 'gray'
     }
 })
+
+

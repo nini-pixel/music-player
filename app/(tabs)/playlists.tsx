@@ -11,8 +11,10 @@ export default function Playlist () {
     return (
         <View style={className`bg-blue-100 flex-1 gap-2`}>
             <SearchInput/>
-            <PlayAndShuffle/>
-            <Track/>
+            <View style={className `mt-25`}>
+                <PlayAndShuffle/>
+                <Track/>
+            </View>
         </View>
     )
 }

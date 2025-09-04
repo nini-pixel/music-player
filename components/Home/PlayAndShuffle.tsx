@@ -1,4 +1,6 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { Button } from '@react-navigation/elements';
+import { router } from "expo-router";
 import React from 'react';
 import { Pressable, View } from 'react-native';
 import className from 'twrnc';
@@ -6,15 +8,16 @@ import className from 'twrnc';
 
 export default function PlayAndShuffle () {
     return (
-        <View style={className`flex-row ml-80 bottom-10 items-center gap-5`}>
+        <View>
+        <View style={className`flex-row justify-end right-8 items-center gap-8 top-20`}>
             <Pressable>
                 <FontAwesome 
-                    name='list' 
+                    name='random' 
                     style={ className `p-1 text-blue-400` }/>
             </Pressable>
             <Pressable>
                 <FontAwesome 
-                    name='backward' 
+                    name='step-backward' 
                     style={ className `p-1 text-blue-400` }/>
             </Pressable>
             <Pressable style={className `flex-row justify-center 
@@ -25,7 +28,7 @@ export default function PlayAndShuffle () {
             </Pressable>
             <Pressable>
                 <FontAwesome 
-                    name='forward' 
+                    name='step-forward' 
                     style={ className `p-1 text-blue-400` }/>
             </Pressable>
             <Pressable>
@@ -33,6 +36,16 @@ export default function PlayAndShuffle () {
                     name='heart' 
                     style={ className `p-1 text-blue-400` }/>
             </Pressable>
+        </View>
+
+        <View style={className`flex-row items-center justify-end gap-5 top-25`}>
+            <Button onPress={() => router.push('/podcast')} style={className `w-70`}>
+            Watch next
+            </Button>
+            <Button onPress={() => router.push('/playlists')} style={className `w-70`}>
+            Add to this playlist
+            </Button>
+        </View>
         </View>
     )
 }

@@ -64,7 +64,7 @@ export default function TabLayout() {
                 
             />
             <Tabs.Screen
-                name="artists"
+                name="podcast"
                 options={{
                 title: 'Podcast',
                 tabBarIcon: ({ color }) => <TabBarIcon name="music" color={color} />,

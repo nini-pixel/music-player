@@ -1,3 +1,4 @@
+import { EpDescription } from '@/assets/transcript/g2p0';
 import {
     parti, partii, partiii, partiv,
     partv, partvi
@@ -9,10 +10,10 @@ import React from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import className from 'twrnc';
 
-export default function Artists () {
+export default function Podcast () {
     return (
         <View>
-        <View style={className `bg-blue-100 flex-1`}>
+        <View style={className `bg-blue-100`}>
             <Pressable>
             <FontAwesome 
                 name='chevron-left' 
@@ -21,8 +22,8 @@ export default function Artists () {
 
             <Track/>
             <PlayAndShuffle/>
-            <View style={styles.container}>
-            <Text style ={styles.p}>Import episode description</Text>
+            <View style={className `ml-5 mr-3 bottom-4`}>
+            <Text style ={styles.p}>{EpDescription}</Text>
             </View>
         </View>
 
@@ -48,14 +49,9 @@ export default function Artists () {
 }
 
 const styles = StyleSheet.create ({
-    container: {
-        marginLeft: 21,
-        marginBottom: 8,
-    },  
     container2: {
         backgroundColor: 'white',
         paddingLeft: 20,
-        paddingTop: 20,
     },
     guestName: {
         fontWeight: '100',
