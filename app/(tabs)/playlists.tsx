@@ -1,6 +1,6 @@
 import PlayAndShuffle from '@/components/Playlist/PlayAndShuffle';
 import SearchInput from '@/components/Playlist/SearchInput';
-import Track from '@/components/Track';
+import Track from '@/components/Playlist/Track';
 
 import React from 'react';
 import { View } from 'react-native';

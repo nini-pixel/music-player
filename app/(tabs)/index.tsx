@@ -1,4 +1,4 @@
-import Track from '@/components/Track';
+import Track from '@/components/Playlist/Track';
 import { Button } from '@react-navigation/elements';
 import { router } from "expo-router";
 import React from 'react';
