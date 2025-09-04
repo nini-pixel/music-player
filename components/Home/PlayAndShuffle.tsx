@@ -40,7 +40,7 @@ export default function PlayAndShuffle () {
 
         <View style={className`flex-row items-center justify-center gap-5 top-95px`}>
             <Button onPress={() => router.push('/podcast')} style={className `w-252px h-35px justify-center`}>
-            Watch next
+            Watch it next
             </Button>
             <Button onPress={() => router.push('/playlists')} style={className `w-252px h-35px justify-center`}>
             Add to a playlist

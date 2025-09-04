@@ -1,4 +1,4 @@
-import Logo from '@/assets/image/logo.png';
+import L2 from '@/assets/image/2.png';
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import className from 'twrnc';
@@ -8,7 +8,7 @@ export default function Track () {
     return (
         <View style={className `ml-5 flex-row gap-21 mt-0`}>
             <Image 
-              source={Logo} 
+              source={L2} 
               style={className `w-50 h-30 rounded-lg border`}
               />
             <View style={className `flex-col right-5`}>
