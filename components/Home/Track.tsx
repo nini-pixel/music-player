@@ -6,7 +6,10 @@ import className from 'twrnc';
 const Track = () => {
     return (
         <View style={className `left-10 flex-row gap-21 bottom-20`}>
-            <Image source={Logo} style={className `w-50 h-30 rounded-lg`}/>
+            <Image 
+              source={Logo} 
+              style={className `w-50 h-30 rounded-lg border`}
+              />
             <View style={className `flex-col`}>
                 <Text style={styles.title}>Title</Text>
                 <Text style={styles.subtitle}>Subtitle</Text>

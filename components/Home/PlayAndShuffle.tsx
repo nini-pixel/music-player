@@ -43,7 +43,7 @@ export default function PlayAndShuffle () {
             Watch next
             </Button>
             <Button onPress={() => router.push('/playlists')} style={className `w-70`}>
-            Add to this playlist
+            Add to a playlist
             </Button>
         </View>
         </View>

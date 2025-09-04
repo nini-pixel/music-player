@@ -7,7 +7,10 @@ import className from 'twrnc';
 export default function Track () {
     return (
         <View style={className `flex-row gap-3 justify-between items-center ml-3 top-20`}>
-            <Image source={Logo} style={className `h-12 w-12 rounded-lg border border-gray-300`}/>
+            <Image 
+              source={Logo} 
+              style={className `h-12 w-12 rounded-lg border border-gray-300`}
+              />
             <View style={className `flex-1`}>
                 <Text style={styles.title}>Title</Text>
                 <Text style={styles.subtitle}>Subtitle</Text>

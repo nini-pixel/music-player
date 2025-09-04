@@ -19,7 +19,9 @@ export default function Podcast () {
                 name='chevron-left' 
                 style={ className `p-1 text-gray-400 ml-3 mt-3` }/>
             </Pressable>
-
+        </View>
+        
+        <View style={className `bg-blue-100 pt-3`}>
             <Track/>
             <PlayAndShuffle/>
             <View style={className `ml-5 mr-3 bottom-4`}>
@@ -51,7 +53,6 @@ export default function Podcast () {
 const styles = StyleSheet.create ({
     container2: {
         backgroundColor: 'white',
-        paddingLeft: 20,
     },
     guestName: {
         fontWeight: '100',
@@ -59,18 +60,18 @@ const styles = StyleSheet.create ({
     },
     p: {
         fontSize: 15,
-        marginBottom: 3,
+        paddingBottom: 3,
     },
     scrollContent: {
         padding: 16,
         backgroundColor: 'white',
-        paddingLeft: 20,
+        paddingLeft: 15,
         paddingTop: 20,
     },
     title: {
         fontWeight: 'bold',
         fontSize: 20,
-        marginBottom: 20,
+        paddingBottom: 20,
     },
     subtitle: {
         fontWeight: 'bold',

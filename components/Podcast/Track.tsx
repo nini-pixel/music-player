@@ -6,8 +6,11 @@ import className from 'twrnc';
 
 export default function Track () {
     return (
-        <View style={className `ml-5 flex-row gap-21 mt-5`}>
-            <Image source={Logo} style={className `w-50 h-30 rounded-lg`}/>
+        <View style={className `ml-5 flex-row gap-21 mt-0`}>
+            <Image 
+              source={Logo} 
+              style={className `w-50 h-30 rounded-lg border`}
+              />
             <View style={className `flex-col right-5`}>
                 <Text style={styles.title}>Title</Text>
                 <Text style={styles.subtitle}>Subtitle</Text>

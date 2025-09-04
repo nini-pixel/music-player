@@ -13,6 +13,12 @@ export default function Playlist () {
             <SearchInput/>
             <View style={className `mt-25`}>
                 <PlayAndShuffle/>
+            </View>
+            <View style={className `bottom-15 gap-5`}>
+                <Track/>
+                <Track/>
+                <Track/>
+                <Track/>
                 <Track/>
             </View>
         </View>
