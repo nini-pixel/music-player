@@ -1,7 +1,10 @@
-import { EpDescription } from '@/assets/transcript/g2p0';
+import { EpDescription, guest, vessel } from '@/assets/transcript/g2p0';
 import {
     parti, partii, partiii, partiv,
-    partv, partvi
+    partix,
+    partv, partvi, partvii, partviii,
+    partx,
+    subtitle1, subtitle2, subtitle3
 } from '@/assets/transcript/g2p1';
 import PlayAndShuffle from '@/components/Podcast/PlayAndShuffle';
 import Track from '@/components/Podcast/Track';
@@ -25,25 +28,30 @@ export default function Podcast () {
             <Track/>
             <PlayAndShuffle/>
             <View style={className `ml-5 mr-3 bottom-4`}>
-            <Text style ={styles.p}>{EpDescription}</Text>
+            <Text style ={styles.p2}>{EpDescription}</Text>
             </View>
         </View>
 
         <View style ={styles.container2}>
             <ScrollView contentContainerStyle={styles.scrollContent}>
+                <Text style={styles.subtitle}>{vessel}</Text>
                 <Text style={styles.p}>{parti}</Text>
-                <Text style={styles.p}>Import Capsule</Text>
+                <Text style={styles.subtitle}>{guest}</Text>
                 <Text style={styles.p}>{partii}</Text>
-                <Text style={styles.p}>Import takeaway format</Text>
-                <Text style={styles.p}>Import Capsule</Text>
-
+                <Text style={styles.subtitle2}>{subtitle1}</Text>
                 <Text style={styles.p}>{partiii}</Text>
-
-                <Text style={styles.p}>Import text</Text>
+                <Text style={styles.subtitle2}>{subtitle2}</Text>
                 <Text style={styles.p}>{partiv}</Text>
                 <Text style={styles.p}>{partv}</Text>
-                <Text style={styles.p}>Premium?</Text>
+                <Text style={styles.subtitle2}>{subtitle3}</Text>
                 <Text style={styles.p}>{partvi}</Text>
+                <Text style={styles.p}>{partvii}</Text>
+                <Text style={styles.subtitle}>{vessel}</Text>
+                <Text style={styles.p}>{partviii}</Text>
+                <Text style={styles.subtitle}>{guest}</Text>
+                <Text style={styles.p}>{partix}</Text>
+                <Text style={styles.subtitle}>{vessel}</Text>
+                <Text style={styles.p}>{partx}</Text>
             </ScrollView>
         </View>
         </View>
@@ -61,6 +69,12 @@ const styles = StyleSheet.create ({
     p: {
         fontSize: 15,
         paddingBottom: 3,
+        textAlign: 'justify',
+
+    },
+    p2: {
+        fontSize: 15,
+        paddingBottom: 3,
     },
     scrollContent: {
         padding: 16,
@@ -75,6 +89,13 @@ const styles = StyleSheet.create ({
     },
     subtitle: {
         fontWeight: 'bold',
-        fontSize: 20,
+        fontSize: 15,
+        paddingBottom: 3,
+    },
+    subtitle2: {
+        fontWeight: 'bold',
+        fontSize: 15,
+        paddingBottom: 3,
+        textAlign: 'center',
     },
 });

@@ -12,7 +12,7 @@ const SearchInput = () => {
               name='search' 
               style={ className `bg-blue-200 p-1 text-gray-400` }/>
             <TextInput 
-                placeholder='Find in songs' 
+                placeholder='Find an episode' 
                 style={className`text-5x1 flex-1 p-1 text-gray-100`}/>
         </View>
     )

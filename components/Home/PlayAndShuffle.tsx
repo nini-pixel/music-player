@@ -9,7 +9,7 @@ import className from 'twrnc';
 export default function PlayAndShuffle () {
     return (
         <View>
-        <View style={className`flex-row justify-end right-8 items-center gap-8 top-20`}>
+        <View style={className`flex-row justify-end right-13 items-center gap-5 top-20`}>
             <Pressable>
                 <FontAwesome 
                     name='random' 
@@ -38,11 +38,11 @@ export default function PlayAndShuffle () {
             </Pressable>
         </View>
 
-        <View style={className`flex-row items-center justify-end gap-5 top-25`}>
-            <Button onPress={() => router.push('/podcast')} style={className `w-70`}>
+        <View style={className`flex-row items-center justify-center gap-5 top-95px`}>
+            <Button onPress={() => router.push('/podcast')} style={className `w-252px h-35px justify-center`}>
             Watch next
             </Button>
-            <Button onPress={() => router.push('/playlists')} style={className `w-70`}>
+            <Button onPress={() => router.push('/playlists')} style={className `w-252px h-35px justify-center`}>
             Add to a playlist
             </Button>
         </View>

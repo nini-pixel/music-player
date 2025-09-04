@@ -1,14 +1,14 @@
-import Logo from '@/assets/image/logo.png';
+import L2 from '@/assets/image/2.png';
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import className from 'twrnc';
 
 const Track = () => {
     return (
-        <View style={className `left-10 flex-row gap-21 bottom-20`}>
+        <View style={className `left-10 flex-row gap-21 bottom-62px`}>
             <Image 
-              source={Logo} 
-              style={className `w-50 h-30 rounded-lg border`}
+              source={L2} 
+              style={className `w-50 h-30 rounded-lg border bottom-2`}
               />
             <View style={className `flex-col`}>
                 <Text style={styles.title}>Title</Text>

@@ -1,1 +1,3 @@
 export const EpDescription = `With today’s guest speaker, we examine how structural barriers can affect investment outcomes, particularly for women with caregiving responsibilities. Students are encouraged to think critically about career design in finance, the realities of inclusion and how personal circumstances shape financial behaviour.`
+export const vessel = `Animator:`
+export const guest = `Guest:`
