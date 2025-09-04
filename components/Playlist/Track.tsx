@@ -3,8 +3,7 @@ import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import className from 'twrnc';
 
-
-export default function Track () {
+const Track = () => {
     return (
         <View style={className `left-10 flex-row gap-21`}>
             <Image source={Logo} style={className `w-50 h-30 rounded-lg`}/>
@@ -16,6 +15,8 @@ export default function Track () {
         </View>
     )
 }
+
+export default Tack 
 
 const styles = StyleSheet.create ({
     title: {

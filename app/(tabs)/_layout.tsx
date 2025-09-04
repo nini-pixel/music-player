@@ -66,13 +66,14 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="artists"
                 options={{
-                title: 'Artists',
+                title: 'Podcast',
                 tabBarIcon: ({ color }) => <TabBarIcon name="music" color={color} />,
-                tabBarLabel: 'Artists',
+                tabBarLabel: 'Podcast',
                 headerStyle: {
                     backgroundColor: 'rgba(55,55,255,0)',
                     borderWidth: 0,
                 },
+                headerShown: false,
                 }}
             />
             <Tabs.Screen
